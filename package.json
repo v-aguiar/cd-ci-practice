@@ -9,7 +9,7 @@
     "start": "node dist/index.js",
     "dev": "nodemon ./src/index.ts",
     "docker": "prisma migrate dev && tsc && nodemon ./dist/index.js",
-    "prisma-test": "dotenv -e .env.test prisma migrate reset --skip-seed",
+    "prisma-test": "dotenv -e .env.test prisma migrate reset --skip-seed --force",
     "test": "npm run prisma-test && NODE_OPTION=--experimental-vm-modules dotenv -e .env.test jest -- -i"
   },
   "keywords": [],
