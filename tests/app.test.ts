@@ -15,7 +15,7 @@ describe("Student tests suite", () => {
         name: "Fulano",
       },
       {
-        name: "Ciclano",
+        name: "Ciclana",
       },
     ];
 
